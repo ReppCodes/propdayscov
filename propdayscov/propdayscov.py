@@ -49,7 +49,7 @@ def _covdays(indata, druglevel):
             else:
                 if fill_dates[x] <= new_end:
                     new_start = new_end + pd.Timedelta(days=1)
-                    new_end = new_start + pd.DateOffset(days=days_supply[x])
+                    new_end = new_start + pd.DateOffset(days=days_supply[x]) - pd.Timedelta(days=1)
                 else:
                     new_start = fill_dates[x]
                     new_end = end_dates[x]
