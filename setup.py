@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="propdayscov",
-    version="1.1.0",
+    version="1.2.0",
     author="Andrew Repp",
     author_email="ajrepp1@gmail.com",
     description="A package for calculating medication PDC.",
